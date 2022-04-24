@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: playground-cluster
+  region: us-west-2
+
+nodeGroups:
+  - name: playground
+    instanceType: t2.micro
+    desiredCapacity: 3
+  
